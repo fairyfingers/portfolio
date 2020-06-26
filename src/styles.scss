@@ -1,9 +1,18 @@
 html, body {
     background-color: black;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Fira Code', monospace;
     color: #dbdbdb;
+    cursor: default;
+}
+
+p {
+    text-align: justify;
 }
 
 a {
     text-decoration: none;
+}
+
+.italic {
+    font-style: italic;
 }
