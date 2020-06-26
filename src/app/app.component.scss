@@ -4,19 +4,19 @@ div {
         flex-direction: row;
         align-items: center;
 
-        & div.slot-default {
+        div.slot-default {
             flex: 1;
         }
 
-        & div.slot-content {
+        div.slot-content {
             flex: 1.85;
             
-            & div.main-menu {
+            div.main-menu {
                 margin-top: 8em;
                 word-spacing: 5em;
                 text-align: center;
 
-                & a {
+                a {
                     font-size: 130%;
                     font-weight: 700;
                     letter-spacing: 0.15em;
@@ -31,11 +31,15 @@ div {
                     &:active {
                         color: #202020
                     }
+
+                    &.active {
+                        color: white;
+                    }
                 }
             }
             
             //? don't need that for now :)
-            // & div.main-page {
+            // div.main-page {
             //     // ...
             // }
         }

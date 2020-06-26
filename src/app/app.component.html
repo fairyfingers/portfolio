@@ -3,19 +3,30 @@
     <div class='slot-content'>
         <div class='main-menu'>
             <nav>
-                <a routerLink='/projects'>
+                <a
+                    routerLink='/projects'
+                    routerLinkActive='active'>
                     PROJECTS
                 </a>
-                <a routerLink='/skills'>
+                <a 
+                    routerLink='/skills'
+                    routerLinkActive='active'>
                     SKILLS
                 </a>
-                <a routerLink='/'>
+                <a
+                    routerLink='/'
+                    routerLinkActive='active'
+                    [routerLinkActiveOptions]='{ exact: true }'>
                     HOMEPAGE
                 </a>
-                <a routerLink='/about'>
+                <a
+                    routerLink='/about'
+                    routerLinkActive='active'>
                     ABOUT
                 </a>
-                <a routerLink='/contact'>
+                <a
+                    routerLink='/contact'
+                    routerLinkActive='active'>
                     CONTACT
                 </a>
             </nav>

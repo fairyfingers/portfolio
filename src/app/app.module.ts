@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import HomepageModule from 'src/app/containers/homepage/homepage.module';
+import SkillsModule from './containers/skills/skills.module';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import HomepageModule from 'src/app/containers/homepage/homepage.module';
     BrowserModule,
     AppRoutingModule,
     // custom...
-    HomepageModule
+    HomepageModule,
+    SkillsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
