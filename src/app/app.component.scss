@@ -11,32 +11,44 @@ div {
         div.slot-content {
             flex: 2;
             
-            div.main-menu {
-                margin-top: 4em;
+            div.main-logo {
+                background-image: url('../assets/fairyfingers_mechanic_gnome_v2.png');
+                width: 253px;
+                height: 259px;
+                margin: auto;
+            }
+            
+            nav.main-menu {
+                display: flex;
                 font-family: 'Open Sans', sans-serif;
-                word-spacing: 5em;
                 text-align: center;
 
-                a {
-                    font-size: 130%;
-                    font-weight: 700;
-                    letter-spacing: 0.15em;
-                    color: #646464;
-                    transition-property: color;
-                    transition-duration: 0.1s;
-
-                    &:hover {
-                        color: white;
-                    }
-
-                    &:active {
-                        color: #202020
-                    }
-
-                    &.active {
-                        color: white;
-                    }
-                }
+                div.menu-item {
+                    flex: 1;
+                    
+                    a {
+                        font-size: 130%;
+                        font-weight: 700;
+                        letter-spacing: 0.15em;
+                        color: #646464;
+                        transition-property: color;
+                        transition-duration: 0.1s;
+    
+                        &:hover {
+                            color: white;
+                        }
+    
+                        &:active {
+                            color: #202020
+                        }
+    
+                        &.active {
+                            color: white;
+                        }
+                    }    
+                } 
+                
+                
             }
             
             //? don't need that for now :)

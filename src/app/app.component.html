@@ -1,9 +1,49 @@
 <div class='container'>
     <div class='slot-default'></div>
     <div class='slot-content'>
-        <div class='main-menu'>
-            <nav>
+        <div class='main-logo'>
+            <!-- <img
+                src='assets/fairyfingers_mechanic_gnome_v2.png'
+                alt='A gnome with a robot mask lightly smiling.' /> -->
+        </div>
+        <nav class='main-menu'>
+            <div class='menu-item'>
                 <a
+                    routerLink='/projects'
+                    routerLinkActive='active'>
+                    PROJECTS
+                </a>
+            </div>
+            <div class='menu-item'>
+                <a 
+                    routerLink='/skills'
+                    routerLinkActive='active'>
+                    SKILLS
+                </a>
+            </div>
+            <div class='menu-item'>
+                <a
+                    routerLink='/'
+                    routerLinkActive='active'
+                    [routerLinkActiveOptions]='{ exact: true }'>
+                    HOMEPAGE
+                </a>
+            </div>
+            <div class='menu-item'>
+                <a
+                    routerLink='/about'
+                    routerLinkActive='active'>
+                    ABOUT
+                </a>
+            </div>
+            <div class='menu-item'>
+                <a
+                    routerLink='/contact'
+                    routerLinkActive='active'>
+                    CONTACT
+                </a>
+            </div>
+                <!-- <a
                     routerLink='/projects'
                     routerLinkActive='active'>
                     PROJECTS
@@ -28,14 +68,13 @@
                     routerLink='/contact'
                     routerLinkActive='active'>
                     CONTACT
-                </a>
-            </nav>
-        </div>
+                </a> -->
+        </nav>
         <div class='main-page'>
             <router-outlet></router-outlet>
         </div>
         <div class='footer'>
-            Designed by fairyfingers - year 2020
+            v{{ version }} - 2020
         </div>
     </div>
     <div class='slot-default'></div>
