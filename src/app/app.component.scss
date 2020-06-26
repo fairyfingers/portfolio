@@ -1,46 +1,43 @@
 div {
-    // * MAIN PAGE CONTAINER
     &.container {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    // * MAIN PAGE SUBCONTAINERS
-    &.subcontainer {
-        display: flex;
         flex-direction: row;
-        justify-content: center;
+        align-items: center;
 
-        & > div {
+        & div.slot-default {
             flex: 1;
-
-            &.content {
-                flex: 1.85;
-            }
         }
-    }
 
-    // * ROUTER NAVIGATION LINKS
-    &.main-menu {
-        margin-top: 8em;
-        word-spacing: 5em;
+        & div.slot-content {
+            flex: 1.85;
+            
+            & div.main-menu {
+                margin-top: 8em;
+                word-spacing: 5em;
+                text-align: center;
 
-        & a {
-            font-size: 130%;
-            font-weight: 700;
-            letter-spacing: 0.15em;
-            color: #646464;
-            transition-property: color;
-            transition-duration: 0.1s;
+                & a {
+                    font-size: 130%;
+                    font-weight: 700;
+                    letter-spacing: 0.15em;
+                    color: #646464;
+                    transition-property: color;
+                    transition-duration: 0.1s;
 
-            &:hover {
-                color: white;
+                    &:hover {
+                        color: white;
+                    }
+
+                    &:active {
+                        color: #202020
+                    }
+                }
             }
-
-            &:active {
-                color: #202020
-            }
+            
+            //? don't need that for now :)
+            // & div.main-page {
+            //     // ...
+            // }
         }
     }
 }

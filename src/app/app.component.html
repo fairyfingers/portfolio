@@ -1,28 +1,28 @@
 <div class='container'>
-    <div class='main-menu'>
-        <nav>
-            <a routerLink='/projects'>
-                PROJECTS
-            </a>
-            <a routerLink='/skills'>
-                SKILLS
-            </a>
-            <a routerLink='/'>
-                HOMEPAGE
-            </a>
-            <a routerLink='/about'>
-                ABOUT
-            </a>
-            <a routerLink='/contact'>
-                CONTACT
-            </a>
-        </nav>
-    </div>
-    <div class='subcontainer'>
-        <div></div>
-        <div class='content'>
+    <div class='slot-default'></div>
+    <div class='slot-content'>
+        <div class='main-menu'>
+            <nav>
+                <a routerLink='/projects'>
+                    PROJECTS
+                </a>
+                <a routerLink='/skills'>
+                    SKILLS
+                </a>
+                <a routerLink='/'>
+                    HOMEPAGE
+                </a>
+                <a routerLink='/about'>
+                    ABOUT
+                </a>
+                <a routerLink='/contact'>
+                    CONTACT
+                </a>
+            </nav>
+        </div>
+        <div class='main-page'>
             <router-outlet></router-outlet>
         </div>
-        <div></div>
     </div>
+    <div class='slot-default'></div>
 </div>
