@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import HomepageModule from 'src/app/containers/homepage/homepage.module';
 import SkillsModule from './containers/skills/skills.module';
+import ProjectsModule from './containers/projects/projects.module';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import SkillsModule from './containers/skills/skills.module';
     AppRoutingModule,
     // custom...
     HomepageModule,
-    SkillsModule
+    SkillsModule,
+    ProjectsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

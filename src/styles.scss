@@ -5,6 +5,11 @@ html, body {
     cursor: default;
 }
 
+h1 {
+    font-family: 'Gloria Hallelujah', cursive;
+    font-weight: normal;
+}
+
 p {
     text-align: justify;
 }
@@ -15,4 +20,8 @@ a {
 
 .italic {
     font-style: italic;
+}
+
+.bold {
+    font-weight: 700;
 }

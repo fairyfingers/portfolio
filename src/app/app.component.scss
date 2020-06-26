@@ -9,10 +9,10 @@ div {
         }
 
         div.slot-content {
-            flex: 1.85;
+            flex: 2;
             
             div.main-menu {
-                margin-top: 8em;
+                margin-top: 4em;
                 font-family: 'Open Sans', sans-serif;
                 word-spacing: 5em;
                 text-align: center;
@@ -43,6 +43,12 @@ div {
             // div.main-page {
             //     // ...
             // }
+
+            div.footer {
+                font-size: 80%;
+                opacity: 20%;
+                text-align: center;
+            }
         }
     }
 }
