@@ -1,0 +1,12 @@
+p {
+    &.description {
+        font-family: 'Fira Code', monospace;
+        text-align: justify;
+    }
+
+    &.signature {
+        font-family: 'Gloria Hallelujah', cursive;
+        text-align: right;
+        font-size: 120%;
+    }
+}
