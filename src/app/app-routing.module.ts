@@ -10,6 +10,7 @@ import HomepageComponent from './containers/homepage/homepage.component';
 import ProjectsComponent from './containers/projects/projects.component';
 import SkillsCommunicationComponent from './containers/skills/components/skills-communication/skills-communication.component';
 import SkillsComponent from './containers/skills/skills.component';
+import SkillsTechIntelligenceComponent from './containers/skills/components/skills-tech-intelligence/skills-tech-intelligence.component';
 
 const routes: Routes = [{
     path: '',
@@ -29,6 +30,10 @@ const routes: Routes = [{
     {
       path: 'communication',
       component: SkillsCommunicationComponent
+    },
+    {
+      path: 'tech-intelligence',
+      component: SkillsTechIntelligenceComponent
     }]
   },
   {

@@ -6,16 +6,19 @@ import {
 } from '@angular/router';
 
 import SkillsCommunicationComponent from './components/skills-communication/skills-communication.component';
+import SkillsTechIntelligenceComponent from './components/skills-tech-intelligence/skills-tech-intelligence.component';
 import SkillsComponent from './skills.component';
 
 @NgModule({
   declarations: [
     SkillsCommunicationComponent,
-    SkillsComponent
+    SkillsComponent,
+    SkillsTechIntelligenceComponent
   ],
   exports: [
     SkillsCommunicationComponent,
-    SkillsComponent
+    SkillsComponent,
+    SkillsTechIntelligenceComponent
   ],
   imports: [
     RouterModule
