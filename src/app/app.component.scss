@@ -1,66 +1,68 @@
 div {
-    &.container {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+  &.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  
+    animation: fadeIn ease 2s;
 
-        div.slot-default {
-            flex: 1;
-        }
-
-        div.slot-content {
-            flex: 2;
-            
-            div.main-logo {
-                background-image: url('../assets/fairyfingers_mechanic_gnome_v2.png');
-                width: 253px;
-                height: 259px;
-                margin: auto;
-            }
-            
-            nav.main-menu {
-                display: flex;
-                font-family: 'Open Sans', sans-serif;
-                text-align: center;
-
-                div.menu-item {
-                    flex: 1;
-                    
-                    a {
-                        font-size: 130%;
-                        font-weight: 700;
-                        letter-spacing: 0.15em;
-                        color: #646464;
-                        transition-property: color;
-                        transition-duration: 0.1s;
-    
-                        &:hover {
-                            color: white;
-                        }
-    
-                        &:active {
-                            color: #202020
-                        }
-    
-                        &.active {
-                            color: white;
-                        }
-                    }    
-                } 
-                
-                
-            }
-            
-            //? don't need that for now :)
-            // div.main-page {
-            //     // ...
-            // }
-
-            div.footer {
-                font-size: 80%;
-                opacity: 20%;
-                text-align: center;
-            }
-        }
+    div.slot-default {
+      flex: 1;
     }
+
+    div.slot-content {
+      flex: 2;
+
+      div.main-logo {
+        background-image: url('../assets/fairyfingers_mechanic_gnome_v2.png');
+        width: 253px;
+        height: 259px;
+        margin: auto;
+      }
+
+      nav.main-menu {
+        display: flex;
+        font-family: 'Open Sans', sans-serif;
+        text-align: center;
+
+        div.menu-item {
+          flex: 1;
+
+          a {
+            font-size: 130%;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            color: #646464;
+            transition-property: color;
+            transition-duration: 0.1s;
+
+            &:hover {
+              color: white;
+            }
+
+            &:active {
+              color: #202020
+            }
+
+            &.active {
+              color: white;
+            }
+          }
+        }
+
+
+      }
+
+      //? don't need that for now :)
+      // div.main-page {
+      //     // ...
+      // }
+
+      div.footer {
+        font-size: 80%;
+        opacity: 20%;
+        text-align: center;
+      }
+    }
+  }
 }
