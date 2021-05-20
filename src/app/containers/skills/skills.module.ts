@@ -9,6 +9,7 @@ import SkillsArchitectureDesignComponent from './components/skills-architecture-
 import SkillsClientInteractionComponent from './components/skills-client-interaction/skills-client-interaction.component';
 import SkillsCommunicationComponent from './components/skills-communication/skills-communication.component';
 import SkillsTechIntelligenceComponent from './components/skills-tech-intelligence/skills-tech-intelligence.component';
+import SkillsTestsComponent from './components/skills-tests/skills-tests.component';
 import SkillsComponent from './skills.component';
 
 @NgModule({
@@ -17,14 +18,16 @@ import SkillsComponent from './skills.component';
     SkillsClientInteractionComponent,
     SkillsCommunicationComponent,
     SkillsComponent,
-    SkillsTechIntelligenceComponent
+    SkillsTechIntelligenceComponent,
+    SkillsTestsComponent
   ],
   exports: [
     SkillsArchitectureDesignComponent,
     SkillsClientInteractionComponent,
     SkillsCommunicationComponent,
     SkillsComponent,
-    SkillsTechIntelligenceComponent
+    SkillsTechIntelligenceComponent,
+    SkillsTestsComponent
   ],
   imports: [
     RouterModule

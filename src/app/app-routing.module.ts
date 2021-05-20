@@ -13,6 +13,7 @@ import SkillsClientInteractionComponent from './containers/skills/components/ski
 import SkillsCommunicationComponent from './containers/skills/components/skills-communication/skills-communication.component';
 import SkillsComponent from './containers/skills/skills.component';
 import SkillsTechIntelligenceComponent from './containers/skills/components/skills-tech-intelligence/skills-tech-intelligence.component';
+import SkillsTestsComponent from './containers/skills/components/skills-tests/skills-tests.component';
 
 const routes: Routes = [{
     path: '',
@@ -44,6 +45,10 @@ const routes: Routes = [{
     {
       path: 'client-interaction',
       component: SkillsClientInteractionComponent
+    },
+    {
+      path: 'tests',
+      component: SkillsTestsComponent
     }]
   },
   {
