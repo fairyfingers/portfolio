@@ -1,0 +1,60 @@
+<div>
+  <div class="back">
+    <a [routerLink]="['../']">
+      ...précédent
+    </a>
+  </div>
+  <h1>Conception d'architecture</h1>
+  <p>
+    Lorsqu’il s’agit du développement d’une solution <span class="bold">logicielle</span>, on est souvent confronté à
+    des questions similaires.
+    Parmi elles les <span class="bold">choix</span> des technologies, les éventuelles problématiques de <span
+      class="bold">performance</span> et, bien sûr, la manière dont on
+    compte organiser la <span class="bold">structure</span> technique de la solution. De là naît l’importance de l’<span
+      class="bold">architecture</span>.
+  </p>
+
+  <p>
+    En réalité, l’architecture d’une solution représente l’<span class="bold">ensemble des premiers choix</span> qui ont
+    été pris quant à sa
+    construction. C’est la représentation même du <span class="bold">chemin</span> qu’ont décidé de prendre les équipes
+    techniques pour développer
+    le logiciel. Une fois que les développeurs ont bien saisi le <span class="bold">domaine</span> au sein duquel ils
+    s’apprêtent à mettre en place
+    une solution, ils sont capables de mieux définir les conditions nécessaires à l’élaboration de l’architecture, et à
+    son <span class="bold">fonctionnement</span>.
+  </p>
+
+  <p>
+    À IN’TECH, la <span class="bold">pédagogie par projet</span> nous permet justement de mettre un pied dans la
+    conception d’architecture. On est
+    finalement assez tôt capable de définir le chemin à prendre durant les plusieurs mois de développement qui suivent
+    le
+    début du semestre. C’est une compétence qui prouve une certaine <span class="bold">efficacité</span> en entreprise :
+    on est jeune, encore
+    édudiant, et malgré cela, on est en mesure de proposer des axes architecturaux sur lesquels démarrer dans des
+    projets
+    concrets.
+  </p>
+
+  <p>
+    C’est notamment ce qu’il m’a été donné de faire lors du <span class="bold">réusinage</span>/refactoring d’une <span
+      class="bold">solution existante</span>, en production
+    depuis deux ans déjà. En fait, le nombre d’utilisateurs ne cessait d’augmenter et nous devions trouver une façon de
+    <span class="bold">gérer l’augmentation</span> du niveau de requêtes. On m’a explicitement demandé mon avis quant à
+    la manière dont il fallait
+    <span class="bold">réorganiser</span> la structure back-end du projet. De base, celui-ci utilisait Express avec
+    Node.js, en pure JavaScript ;
+    avec typage dynamique donc. Mon choix s’est porté sur du Nest.js pour faire le parallèle avec la manière dont le
+    front-end avait été développé avec Angular, et l’utilisation du TypeScript pour éviter tout problème en production
+    au
+    runtime. Le lead dev a validé ce choix qu’il a trouvé tout à fait <span class="bold">pertinent</span>, et nous avons
+    entamé la phase de
+    réusinage la semaine suivant la décision.
+  </p>
+
+  <p>
+    Aujourd’hui, le back-end du projet tourne de la façon dont nous l’avions réimaginé, et supporte bien plus de charge
+    qu’auparavant.
+  </p>
+</div>
