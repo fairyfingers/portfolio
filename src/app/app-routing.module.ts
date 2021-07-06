@@ -8,16 +8,17 @@ import {
 
 import ContactComponent from './containers/contact/contact.component';
 import HomepageComponent from './containers/homepage/homepage.component';
-import ProjectsByComponent from './containers/projects/components/by/by.component';
+import ProjectsByComponent from './containers/projects/components/projects-by/by.component';
 import ProjectsComponent from './containers/projects/projects.component';
-import ProjectsForkComponent from './containers/projects/components/fork/fork.component';
-import ProjectsGarrisonComponent from './containers/projects/components/garrison/garrison.component';
+import ProjectsForkComponent from './containers/projects/components/projects-fork/fork.component';
+import ProjectsGarrisonComponent from './containers/projects/components/projects-garrison/garrison.component';
 import SkillsArchitectureDesignComponent from './containers/skills/components/skills-architecture-design/skills-architecture-design.component';
 import SkillsClientInteractionComponent from './containers/skills/components/skills-client-interaction/skills-client-interaction.component';
 import SkillsCommunicationComponent from './containers/skills/components/skills-communication/skills-communication.component';
 import SkillsComponent from './containers/skills/skills.component';
 import SkillsTechIntelligenceComponent from './containers/skills/components/skills-tech-intelligence/skills-tech-intelligence.component';
 import SkillsTestsComponent from './containers/skills/components/skills-tests/skills-tests.component';
+import SkillsUserSchoolingComponent from './containers/skills/components/skills-user-schooling/user-schooling.component';
 
 const routes: Routes = [{
     path: '',
@@ -71,6 +72,10 @@ const routes: Routes = [{
         {
           path: 'tests',
           component: SkillsTestsComponent
+        },
+        {
+          path: 'user-schooling',
+          component: SkillsUserSchoolingComponent
         }]
     }]
   },

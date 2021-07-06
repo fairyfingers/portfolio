@@ -1,12 +1,12 @@
 import {
   NgModule
 } from '@angular/core';
-import ProjectsByComponent from './components/by/by.component';
+import ProjectsByComponent from './components/projects-by/by.component';
 import ProjectsComponent from './projects.component';
 
 import { RouterModule } from '@angular/router';
-import ProjectsForkComponent from './components/fork/fork.component';
-import ProjectsGarrisonComponent from './components/garrison/garrison.component';
+import ProjectsForkComponent from './components/projects-fork/fork.component';
+import ProjectsGarrisonComponent from './components/projects-garrison/garrison.component';
 
 @NgModule({
   declarations: [
