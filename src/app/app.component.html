@@ -6,6 +6,11 @@
     </div>
     <nav class='main-menu'>
       <div class='menu-item'>
+        <a routerLink='/' routerLinkActive='active' [routerLinkActiveOptions]='{ exact: true }'>
+          ACCUEIL
+        </a>
+      </div>
+      <div class='menu-item'>
         <a routerLink='/projects' routerLinkActive='active'>
           PROJETS
         </a>
@@ -16,18 +21,8 @@
         </a>
       </div>
       <div class='menu-item'>
-        <a routerLink='/' routerLinkActive='active' [routerLinkActiveOptions]='{ exact: true }'>
-          ACCUEIL
-        </a>
-      </div>
-      <div class='menu-item'>
-        <a routerLink='/about' routerLinkActive='active'>
+        <a href="https://www.linkedin.com/in/pierre-viara/" target="_blank">
           C.V.
-        </a>
-      </div>
-      <div class='menu-item'>
-        <a routerLink='/contact' routerLinkActive='active'>
-          CONTACT
         </a>
       </div>
     </nav>
