@@ -1,0 +1,16 @@
+div {
+  animation: fadeIn ease 0.5s;
+
+  a {
+    color: #666666;
+
+    border-bottom: 1px double #272727;
+
+    transition-property: color;
+    transition-duration: 0.1s;
+
+    &:hover {
+      color: #a4a4a4;
+    }
+  }
+}

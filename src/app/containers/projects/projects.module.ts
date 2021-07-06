@@ -6,12 +6,14 @@ import ProjectsComponent from './projects.component';
 
 import { RouterModule } from '@angular/router';
 import ProjectsForkComponent from './components/fork/fork.component';
+import ProjectsGarrisonComponent from './components/garrison/garrison.component';
 
 @NgModule({
   declarations: [
     ProjectsByComponent,
     ProjectsComponent,
-    ProjectsForkComponent
+    ProjectsForkComponent,
+    ProjectsGarrisonComponent
   ],
   imports: [
     RouterModule
