@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import HomepageModule from 'src/app/containers/homepage/homepage.module';
 import SkillsModule from './containers/skills/skills.module';
 import ProjectsModule from './containers/projects/projects.module';
+import { ContactModule } from './containers/contact/contact.module';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import ProjectsModule from './containers/projects/projects.module';
     BrowserModule,
     AppRoutingModule,
     // custom...
+    ContactModule,
     HomepageModule,
     SkillsModule,
     ProjectsModule

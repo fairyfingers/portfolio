@@ -6,6 +6,7 @@ import {
   RouterModule
 } from '@angular/router';
 
+import ContactComponent from './containers/contact/contact.component';
 import HomepageComponent from './containers/homepage/homepage.component';
 import ProjectsByComponent from './containers/projects/components/by/by.component';
 import ProjectsComponent from './containers/projects/projects.component';
@@ -22,6 +23,10 @@ const routes: Routes = [{
     path: '',
     component: HomepageComponent,
     pathMatch: 'full'
+  },
+  {
+    path: 'contact',
+    component: ContactComponent
   },
   {
     path: 'projects',
