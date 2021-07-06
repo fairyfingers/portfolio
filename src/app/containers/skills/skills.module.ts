@@ -21,14 +21,6 @@ import SkillsComponent from './skills.component';
     SkillsTechIntelligenceComponent,
     SkillsTestsComponent
   ],
-  exports: [
-    SkillsArchitectureDesignComponent,
-    SkillsClientInteractionComponent,
-    SkillsCommunicationComponent,
-    SkillsComponent,
-    SkillsTechIntelligenceComponent,
-    SkillsTestsComponent
-  ],
   imports: [
     RouterModule
   ]

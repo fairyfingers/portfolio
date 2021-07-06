@@ -1,3 +1,21 @@
 <div>
-  <!-- todo -->
+  <nav>
+    <div>
+      <a [routerLink]="['by']" routerLinkActive='active'>
+        By
+      </a>
+    </div>
+    <div>
+      <a [routerLink]="['fork']" routerLinkActive='active'>
+        Fork
+      </a>
+    </div>
+    <div>
+      <a [routerLink]="['garrison']" routerLinkActive='active'>
+        Garrison
+      </a>
+    </div>
+  </nav>
+
+  <router-outlet></router-outlet>
 </div>

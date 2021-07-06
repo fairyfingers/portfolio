@@ -1,56 +1,46 @@
 <div>
-  <div class="back">
-    <a [routerLink]="['../']">
-      ...précédent
-    </a>
-  </div>
   <h1>Conception d'architecture</h1>
   <p>
-    Lorsqu’il s’agit du développement d’une solution <span class="bold">logicielle</span>, on est souvent confronté à
-    des questions similaires.
-    Parmi elles les <span class="bold">choix</span> des technologies, les éventuelles problématiques de <span
-      class="bold">performance</span> et, bien sûr, la manière dont on
-    compte organiser la <span class="bold">structure</span> technique de la solution. De là naît l’importance de l’<span
-      class="bold">architecture</span>.
+    Développer une solution logicielle amène très souvent à des questions récurrentes. Parmi elles les choix des
+    technologies, les éventuelles problématiques de performance (ex : quel framework est-il judicieux de prendre dans le
+    cadre du développement d’un produit à un million d’utilisateurs) et, bien sûr, la manière dont on compte organiser
+    la structure technique de la solution : quel pattern (guide technique) choisir parmi les nombreux existants ? De là
+    naît l’importance de l’architecture.
   </p>
 
   <p>
-    En réalité, l’architecture d’une solution représente l’<span class="bold">ensemble des premiers choix</span> qui ont
-    été pris quant à sa
-    construction. C’est la représentation même du <span class="bold">chemin</span> qu’ont décidé de prendre les équipes
-    techniques pour développer
-    le logiciel. Une fois que les développeurs ont bien saisi le <span class="bold">domaine</span> au sein duquel ils
-    s’apprêtent à mettre en place
+    En réalité, l’architecture d’une solution représente l’ensemble des premiers choix qui ont été pris quant à sa
+    construction. C’est la représentation même du chemin qu’ont décidé de prendre les équipes techniques pour développer
+    le logiciel. Une fois que les développeurs ont bien saisi le besoin pour lequel ils s’apprêtent à mettre en place
     une solution, ils sont capables de mieux définir les conditions nécessaires à l’élaboration de l’architecture, et à
-    son <span class="bold">fonctionnement</span>.
+    son fonctionnement : compréhension du besoin et du domaine duquel il est né (i.e. le corps de métier des clients),
+    définition des besoins techniques, et enfin définition d’une architecture capable de répondre à ces besoins
+    techniques tout en anticipant de potentiels points de variation qui pourraient surgir pendant le développement du
+    projet.
   </p>
 
   <p>
-    À IN’TECH, la <span class="bold">pédagogie par projet</span> nous permet justement de mettre un pied dans la
-    conception d’architecture. On est
-    finalement assez tôt capable de définir le chemin à prendre durant les plusieurs mois de développement qui suivent
-    le
-    début du semestre. C’est une compétence qui prouve une certaine <span class="bold">efficacité</span> en entreprise :
-    on est jeune, encore
-    édudiant, et malgré cela, on est en mesure de proposer des axes architecturaux sur lesquels démarrer dans des
-    projets
-    concrets.
+    À INTECH, la pédagogie par projet nous permet justement de mettre un pied dans la conception d’architecture. Il est
+    finalement possible assez tôt de définir le chemin à prendre durant les plusieurs mois de développement qui suivent
+    le début du semestre. C’est une compétence qui prouve une certaine efficacité en entreprise : l’étudiant est jeune,
+    pas encore diplômé, et malgré cela, il est en mesure de proposer des axes architecturaux sur lesquels démarrer des
+    projets concrets.
   </p>
 
   <p>
-    C’est notamment ce qu’il m’a été donné de faire lors du <span class="bold">réusinage</span>/refactoring d’une <span
-      class="bold">solution existante</span>, en production
-    depuis deux ans déjà. En fait, le nombre d’utilisateurs ne cessait d’augmenter et nous devions trouver une façon de
-    <span class="bold">gérer l’augmentation</span> du niveau de requêtes. On m’a explicitement demandé mon avis quant à
-    la manière dont il fallait
-    <span class="bold">réorganiser</span> la structure back-end du projet. De base, celui-ci utilisait Express avec
-    Node.js, en pure JavaScript ;
-    avec typage dynamique donc. Mon choix s’est porté sur du Nest.js pour faire le parallèle avec la manière dont le
-    front-end avait été développé avec Angular, et l’utilisation du TypeScript pour éviter tout problème en production
-    au
-    runtime. Le lead dev a validé ce choix qu’il a trouvé tout à fait <span class="bold">pertinent</span>, et nous avons
-    entamé la phase de
-    réusinage la semaine suivant la décision.
+    C’est notamment ce qu’il m’a été donné de faire lors du réusinage/refactoring d’une solution existante, en
+    production depuis deux ans déjà. Il s’agissait d’une solution RH permettant à des exploitants d’agence d’intérim de
+    gérer la ressource intérimaire : recenser des profils, des candidatures à des annonces etc. Le nombre d’utilisateurs
+    ne cessait d’augmenter et nous devions trouver une façon de gérer l’augmentation du niveau de requêtes. Le directeur
+    technique de la société m’a demandé mon avis quant à la manière dont il fallait réorganiser la structure back-end du
+    projet ; car c’était de cette manière que nous étions capable d’optimiser nos performances afin de répondre à une
+    charge supplémentaire de requêtes. De base, celui-ci utilisait Express avec Node.js, en pur JavaScript ; avec typage
+    dynamique donc. Mon choix s’est porté sur du Nest.js pour faire le parallèle avec la manière dont le front-end avait
+    été développé avec Angular, et l’utilisation du TypeScript pour éviter tout problème en production au runtime. Le
+    directeur technique a validé ce choix qu’il a trouvé tout à fait pertinent, puisqu’étant donné la structure presque
+    similaire des projets front-end et back-end, les développements futurs n’en seraient que plus rapides et efficaces.
+    Bien sûr, cette refonte permettrait aussi de répondre au besoin initial. Nous avons entamé la phase de réusinage la
+    semaine suivant la décision.
   </p>
 
   <p>

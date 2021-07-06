@@ -1,29 +1,31 @@
 <div>
-  <ul>
-    <li>
-      <a [routerLink]="['communication']">
+  <nav>
+    <div>
+      <a [routerLink]="['communication']" routerLinkActive='active'>
         Communication
       </a>
-    </li>
-    <li>
-      <a [routerLink]="['tech-intelligence']">
+    </div>
+    <div>
+      <a [routerLink]="['tech-intelligence']" routerLinkActive='active'>
         Veille technologique
       </a>
-    </li>
-    <li>
-      <a [routerLink]="['architecture-design']">
-        Conception d'architecture
+    </div>
+    <div>
+      <a [routerLink]="['architecture-design']" routerLinkActive='active'>
+        Architecture
       </a>
-    </li>
-    <li>
-      <a [routerLink]="['client-interaction']">
-        Interaction avec le client
+    </div>
+    <div>
+      <a [routerLink]="['client-interaction']" routerLinkActive='active'>
+        Interaction client
       </a>
-    </li>
-    <li>
-      <a [routerLink]="['tests']">
+    </div>
+    <div>
+      <a [routerLink]="['tests']" routerLinkActive='active'>
         Tests
       </a>
-    </li>
-  </ul>
+    </div>
+  </nav>
+
+  <router-outlet></router-outlet>
 </div>

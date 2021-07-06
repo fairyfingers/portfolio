@@ -7,7 +7,10 @@ import {
 } from '@angular/router';
 
 import HomepageComponent from './containers/homepage/homepage.component';
+import ProjectsByComponent from './containers/projects/components/by/by.component';
 import ProjectsComponent from './containers/projects/projects.component';
+import ProjectsForkComponent from './containers/projects/components/fork/fork.component';
+import ProjectsGarrisonComponent from './containers/projects/components/garrison/garrison.component';
 import SkillsArchitectureDesignComponent from './containers/skills/components/skills-architecture-design/skills-architecture-design.component';
 import SkillsClientInteractionComponent from './containers/skills/components/skills-client-interaction/skills-client-interaction.component';
 import SkillsCommunicationComponent from './containers/skills/components/skills-communication/skills-communication.component';
@@ -22,33 +25,48 @@ const routes: Routes = [{
   },
   {
     path: 'projects',
-    component: ProjectsComponent
+    children: [{
+      path: '',
+      component: ProjectsComponent,
+      children: [{
+        path: 'by',
+        component: ProjectsByComponent
+      },
+      {
+        path: 'fork',
+        component: ProjectsForkComponent
+      },
+      {
+        path: 'garrison',
+        component: ProjectsGarrisonComponent
+      }]
+    }]
   },
   {
     path: 'skills',
     children: [{
       path: '',
-      component: SkillsComponent
-    },
-    {
-      path: 'communication',
-      component: SkillsCommunicationComponent
-    },
-    {
-      path: 'tech-intelligence',
-      component: SkillsTechIntelligenceComponent
-    },
-    {
-      path: 'architecture-design',
-      component: SkillsArchitectureDesignComponent
-    },
-    {
-      path: 'client-interaction',
-      component: SkillsClientInteractionComponent
-    },
-    {
-      path: 'tests',
-      component: SkillsTestsComponent
+      component: SkillsComponent,
+      children: [{
+          path: 'communication',
+          component: SkillsCommunicationComponent
+        },
+        {
+          path: 'tech-intelligence',
+          component: SkillsTechIntelligenceComponent
+        },
+        {
+          path: 'architecture-design',
+          component: SkillsArchitectureDesignComponent
+        },
+        {
+          path: 'client-interaction',
+          component: SkillsClientInteractionComponent
+        },
+        {
+          path: 'tests',
+          component: SkillsTestsComponent
+        }]
     }]
   },
   {

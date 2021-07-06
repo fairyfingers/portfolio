@@ -1,57 +1,53 @@
 <div>
-  <div class="back">
-    <a [routerLink]="['../']">
-      ...précédent
-    </a>
-  </div>
   <h1>Tests</h1>
   <p>
     Prenez n’importe quelle application, n’importe quel produit, développez-y des fonctionnalités sur un ou deux ans, et
-    constatez à quel point la moindre <span class="bold">modification</span> de code y devient si facilement <span
-      class="bold">critique</span>. Il ne suffit que d’une simple
-    ligne pour compromettre la <span class="bold">sécurité</span> de toute une application, ou même son <span
-      class="bold">fonctionnement</span>.
+    constatez à quel point la moindre modification de code y devient si facilement critique. Le temps passé à développer
+    apporte bien évidemment son lot de fonctionnalités, mais aussi toute une complexité que le cerveau humain, à un
+    certain stade, n’est plus capable de gérer. Si anticiper cinq ou six dysfonctionnements est chose possible, il faut
+    savoir qu’aucun logiciel ne dysfonctionne qu’à cinq ou six endroits prédits. Si je devais prendre l’exemple de la
+    solution que nous développons dans mon entreprise, une plateforme de gestion des ressources humaines spécialisée
+    dans l’intérim, il nous est arrivés plus d’une fois de rencontrer des difficultés lorsque nous avons tenté d’y
+    intégrer des nouveautés. Un jour où nous avons intégré un nouvel écran à cette solution, nous nous sommes aperçus
+    qu’une partie importante de l’application a cessé de fonctionner, et nous avons dû passer des heures à comprendre
+    pourquoi. Finalement, un simple développement a suffit à compromettre le fonctionnement de toute une application.
   </p>
 
   <p>
-    Fort heureusement, il existe un moyen de s’assurer qu’aucune <span class="bold">régression</span> n’est induite par
-    l’ajout ou la modification
-    de code dans un projet. Ce moyen, ce sont les <span class="bold">tests</span>. Ils peuvent être de différente <span
-      class="bold">nature</span>, tester un élément
-    singulier ou un ensemble de fonctionnalités supposées fonctionner dans tel ou tel <span
-      class="bold">contexte</span>.
+    Fort heureusement, il existe un moyen de s’assurer qu’aucune « régression », c’est-à-dire aucun dysfonctionnement de
+    ce qui a déjà été développé, n’est induite par l’ajout ou la modification de code dans un projet. Ce moyen, ce sont
+    les tests. Ils peuvent être de différente nature, tester un élément singulier ou un ensemble de fonctionnalités
+    supposées fonctionner dans tel ou tel contexte.
   </p>
 
   <p>
-    C’est extrêmement <span class="bold">pratique</span> dans le cas où plusieurs développeurs travaillent sur la même
-    application, ou lorsque le
-    développement s’étend sur plusieurs mois ou années. J’ai moi-même eu l’opportunité de développer des tests lors de
-    mon
-    projet en cinquième semestre, <span class="bold">Fork</span>. Ces tests s’assuraient que le <span
-      class="bold">serveur</span> de mon application pouvait toujours
-    <span class="bold">interagir</span> avec la <span class="bold">base de données</span> à laquelle il était censé se
-    connecter. Cela me permettait lors de chaque ajout de
-    fonctionnalité, de m’assurer que les interactions entre mon serveur et ma base de données étaient <span
-      class="bold">toujours fonctionnelles</span>. Et lorsque ce n’était plus le cas, c’est que le code que j’avais
-    ajouté ou modifié n’était pas bon. À
-    ce moment, je ne partageai pas mon code aux autres développeurs avant de m’être assuré que tous mes tests passaient
-    de nouveau.
+    C’est extrêmement pratique dans le cas où plusieurs développeurs travaillent sur la même application, ou lorsque le
+    développement s’étend sur plusieurs mois ou années.
+    J’ai moi-même eu l’opportunité de développer des tests lors de mon projet en cinquième semestre, Fork. Pour
+    information, Fork est une solution en ligne de gestion de commandes, où les élèves de l’école peuvent commander des
+    produits alimentaires et être livrés en classe. Ces tests s’assuraient que le serveur de mon application pouvait
+    toujours interagir avec la base de données à laquelle il était censé se connecter. Cela me permettait lors de chaque
+    ajout de fonctionnalité, de m’assurer que les interactions entre mon serveur et ma base de données étaient toujours
+    fonctionnelles. Et lorsque ce n’était plus le cas, c’est que le code que j’avais ajouté ou modifié n’était pas bon.
+    À ce moment, je ne partageai pas mon code avec les autres développeurs tant que je ne m’étais pas assuré que tous
+    mes tests fonctionnaient de nouveau.
+
   </p>
 
   <p>
-    J’ai rencontré quelques développeurs qui considéraient les tests comme une <span class="bold">perte de temps</span>.
-    S’il s’agit effectivement
-    d’un effort en soi (puisqu’il faut les développer), le temps passé à les développer sera très largement <span
-      class="bold">rentable</span>
+    J’ai rencontré quelques développeurs qui considéraient les tests comme une perte de temps. S’il s’agit effectivement
+    d’un effort en soi (puisqu’il faut les développer), le temps passé à les développer sera très largement rentable
     lorsque les premières régressions de ceux qui n’ont pas développé de tests apparaîtront dans leurs applications.
   </p>
 
   <p>
-    Je ne suis pas un testeur « fou », je teste ce qu’il est <span class="bold">judicieux</span> et important de tester,
-    comme des fonctionnalités
+    Je ne suis pas un testeur « fou », je teste ce qu’il est judicieux et important de tester, comme des fonctionnalités
     critiques dont l’utilisateur a besoin lors de ses nombreuses interactions avec mon produit par exemple. Je pense
-    qu’il
-    existe un <span class="bold">juste milieu</span> entre ne rien tester, et tout tester. Un milieu <span
-      class="bold">efficace</span> et surtout <span class="bold">maintenable</span>.
+    qu’il existe un juste milieu entre ne rien tester, et tout tester. Il est important de bien saisir l’utilité des
+    tests : ils sont utiles dans une application grandissante, qui évolue avec le temps et les ressources qui lui sont
+    allouées. Un test est clair, efficace, précis, mais simple, presque « simplet ». Il doit être compris dès lors qu’il
+    est lu, revisitable par n’importe quel développeur travaillant sur l’application. C’est de cette manière qu’il est
+    maintenable, et donc facilement modifiable. S’il ne l’est pas, la base de code du produit devient presque rigide, et
+    cela va à l’encontre même du principe des tests : faciliter les développements tout en empêchant la régression.
   </p>
 </div>
